@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice set of flexbox</title>
+    <style>
+        li {
+            list-style: none;
+            display: inline;
+            padding: 0px 34px;
+
+        }
+
+        ul {
+            padding: 34px;
+        }
+
+        header {
+            color: white;
+            background-color: black;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .left {
+            height: 70vh;
+            width: 40vw;
+            background-color: blueviolet;
+            /* float: left; */
+        }
+
+        .right {
+            /* float: right; */
+            height: 70vh;
+            width: 40vw;
+            background-color: aqua;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Contact</li>
+                <li>About</li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="left">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora harum incidunt libero
+            voluptatem culpa? Perspiciatis ipsa, nesciunt aperiam explicabo eveniet eum. Blanditiis, architecto.</div>
+
+        <div class="right">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, ipsam odit quia quo
+            totam id non possimus, obcaecati vero, optio laboriosam enim deleniti harum.</div>
+
+    </div>
+
+</body>
+
+</html>

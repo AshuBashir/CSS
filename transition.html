@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform CSS</title>
+    <style>
+        .container{
+            background-color: red;
+            height: 564px;
+        }
+        .box{
+            border: 2px solid black;
+            display: inline-block;
+            
+        }
+        
+        img{
+            /* width:146px;
+            transition-property: width;
+            transition-duration: 2s;
+            transition-timing-function: ease-in;
+            transition-delay: 2s; */
+            
+            transition: width 1s ease-in-out, height 4s ease-in;
+        }
+       
+    </style>
+    
+</head>
+<body>
+
+    <div class="container">
+        <div class="box">
+        <img id="myImg" src="https://source.unsplash.com/860x420/?nature,water" alt="" srcset="">
+        <button id="btn">Toggle</button>
+        </div>
+    </div>
+</body>
+    <script>
+        myImg.style.width = '146px'
+        btn.addEventListener("click" , ()=>{
+           if(myImg.style.width === "546px"){
+            myImg.style.width = "146px"
+           }
+           else if(myImg.style.width === "146px"){
+            myImg.style.width = "546px"
+           }
+        })
+    </script>
+    
+
+</html>
